@@ -1,16 +1,39 @@
-# React + Vite
+# 🎬 Movie App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A movie discovery web application built with **React.js and Vite** as a learning project. The application uses the **TMDB API** to retrieve movie data and **Appwrite** for database functionality.
 
-Currently, two official plugins are available:
+Users can search for movies, and the application tracks movie searches to display the most searched movies in the **Trending Movies** section.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+- 🔎 Search for movies
+- 🎬 Browse movie information
+- 🔥 Display trending movies based on search frequency
+- 📊 Track movie searches
+- 🗄️ Store search data using Appwrite
+- 🎨 Responsive UI with Tailwind CSS
+- ⚡ Fast development with Vite
+- ⚛️ Built with React.js
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Technologies Used
 
-## Expanding the ESLint configuration
+- **React.js** - Frontend library
+- **Vite** - Development and build tool
+- **Tailwind CSS** - Styling
+- **TMDB API** - Movie data
+- **Appwrite** - Database and backend services
+- **JavaScript** - Application logic
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🔥 Trending Movies
+
+The application generates the trending movie section based on the number of times movies are searched.
+
+The process works as follows:
+
+1. A user searches for a movie.
+2. The application sends the search request to the TMDB API.
+3. Movie results are displayed.
+4. The search information is stored in Appwrite.
+5. Search counts are used to determine the most searched movies.
+6. The most frequently searched movies are displayed in the Trending section.
+
